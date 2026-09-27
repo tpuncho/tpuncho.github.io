@@ -1,1 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>VOICES — THE IN-BETWEEN</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #151515;
+    color: #f1ede5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 25px 6%;
+    border-bottom: 1px solid #333;
+}
+
+.topline {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #a6a29d;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.logo {
+    text-align: center;
+    font-size: clamp(55px, 12vw, 150px);
+    font-weight: 900;
+    letter-spacing: -7px;
+    margin: 30px 0 15px;
+}
+
+.tagline {
+    text-align: center;
+    color: #b97882;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+nav a {
+    color: #f1ede5;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+nav a:hover {
+    color: #b51f36;
+}
+
+.page-title {
+    padding: 80px 6% 40px;
+}
+
+.page-title p {
+    color: #b51f36;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.page-title h1 {
+    font-size: clamp(60px, 13vw, 160px);
+    line-height: .8;
+    margin: 10px 0;
+    letter-spacing: -6px;
+}
+
+.description {
+    max-width: 650px;
+    color: #a6a29d;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 30px;
+}
+
+.feature {
+    margin: 20px 6% 90px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 35px;
+}
+
+.feature img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+.feature-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.category {
+    color: #b51f36;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.feature-text h2 {
+    font-size: 50px;
+    line-height: 1;
+    margin: 15px 0;
+}
+
+.feature-text p {
+    color: #a6a29d;
+    line-height: 1.7;
+}
+
+.read {
+    color: #f1ede5;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.stories {
+    padding: 70px 6%;
+    border-top: 1px solid #333;
+}
+
+.stories h2 {
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 25px;
+    line-height: 1.1;
+    margin: 15px 0 10px;
+}
+
+.card p {
+    color: #a6a29d;
+    line-height: 1.5;
+}
+
+.anonymous {
+    margin: 50px 6% 100px;
+    padding: 50px;
+    background: #202020;
+}
+
+.anonymous h2 {
+    font-size: 45px;
+    margin-top: 0;
+}
+
+.quote {
+    padding: 30px 0;
+    border-top: 1px solid #444;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.quote span {
+    display: block;
+    margin-top: 12px;
+    color: #92908c;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+footer {
+    background: #0c0c0c;
+    padding: 60px 6%;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 40px;
+    margin: 0 0 10px;
+}
+
+footer p {
+    color: #92908c;
+}
+
+@media (max-width: 800px) {
+
+    .feature {
+        grid-template-columns: 1fr;
+    }
+
+    .feature img {
+        height: 400px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .anonymous {
+        padding: 30px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="topline">
+        <span>Issue 01 — September 2026</span>
+        <span>THE IN-BETWEEN</span>
+    </div>
+
+    <div class="logo">THE IN-BETWEEN</div>
+
+    <div class="tagline">for girls figuring it out.</div>
+
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="the-edit.html">THE EDIT</a>
+        <a href="life.html">LIFE</a>
+        <a href="school.html">SCHOOL</a>
+        <a href="health.html">HEALTH</a>
+        <a href="future.html">FUTURE</a>
+        <a href="city.html">CITY</a>
+        <a href="culture.html">CULTURE</a>
+        <a href="voices.html">VOICES</a>
+    </nav>
+
+</header>
+
+
+<section class="page-title">
+
+    <p>Essays • Interviews • Real Talk</p>
+
+    <h1>VOICES</h1>
+
+    <div class="description">
+        Stories from girls figuring things out in real time.
+        No perfect answers. No pretending everything is fine.
+        Just people talking honestly.
+    </div>
+
+</section>
+
+
+<section class="feature">
+
+    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80">
+
+    <div class="feature-text">
+
+        <span class="category">PERSONAL ESSAY</span>
+
+        <h2>Everyone Is Figuring It Out. Even the People Who Look Like They Aren't.</h2>
+
+        <p>
+            We spend so much time looking at everyone else's lives
+            that we forget we're only seeing a tiny part of them.
+        </p>
+
+        <a class="read" href="#">READ THE STORY →</a>
+
+    </div>
+
+</section>
+
+
+<section class="stories">
+
+    <h2>More from Voices</h2>
+
+    <div class="grid">
+
+        <article class="card">
+
+            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80">
+
+            <span class="category">INTERVIEW</span>
+
+            <h3>Girls We Know</h3>
+
+            <p>
+                Conversations with girls doing interesting things,
+                from school projects to careers and creative work.
+            </p>
+
+        </article>
+
+
+        <article class="card">
+
+            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=900&q=80">
+
+            <span class="category">REAL TALK</span>
+
+            <h3>Things We Pretend Don't Bother Us</h3>
+
+            <p>
+                Anonymous answers to the questions we're sometimes
+                too embarrassed to ask out loud.
+            </p>
+
+        </article>
+
+
+        <article class="card">
+
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80">
+
+            <span class="category">ESSAY</span>
+
+            <h3>The Friendship You Didn't Realize You Were Outgrowing</h3>
+
+            <p>
+                Sometimes a friendship doesn't end with a fight.
+                Sometimes it just changes.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<section class="anonymous">
+
+    <h2>REAL TALK</h2>
+
+    <div class="quote">
+        “I think everyone at school assumes everyone else has
+        their future figured out.”
+        <span>— Anonymous, 17</span>
+    </div>
+
+    <div class="quote">
+        “Sometimes I just want to stop comparing my life to people
+        I don't even know.”
+        <span>— Anonymous, 16</span>
+    </div>
+
+    <div class="quote">
+        “I'm realizing that growing up doesn't mean suddenly
+        knowing what you're doing.”
+        <span>— Anonymous, 18</span>
+    </div>
+
+</section>
+
+
+<footer>
+
+    <h2>THE IN-BETWEEN</h2>
+
+    <p>for girls figuring it out.</p>
+
+</footer>
+
+</body>
+</html>
