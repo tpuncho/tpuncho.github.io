@@ -1,1 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>SCHOOL — THE IN-BETWEEN</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #151515;
+    color: #f1ede5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 25px 6%;
+    border-bottom: 1px solid #333;
+}
+
+.topline {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #a6a29d;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.logo {
+    text-align: center;
+    font-size: clamp(55px, 12vw, 150px);
+    font-weight: 900;
+    letter-spacing: -7px;
+    margin: 30px 0 15px;
+}
+
+.tagline {
+    text-align: center;
+    color: #b97882;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+nav a {
+    color: #f1ede5;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+nav a:hover {
+    color: #b51f36;
+}
+
+.page-title {
+    padding: 80px 6% 40px;
+}
+
+.page-title p {
+    color: #b51f36;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.page-title h1 {
+    font-size: clamp(60px, 13vw, 160px);
+    line-height: .8;
+    margin: 10px 0;
+    letter-spacing: -6px;
+}
+
+.description {
+    max-width: 650px;
+    color: #a6a29d;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 30px;
+}
+
+.feature {
+    margin: 20px 6% 90px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 35px;
+}
+
+.feature img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+.feature-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.category {
+    color: #b51f36;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.feature-text h2 {
+    font-size: 50px;
+    line-height: 1;
+    margin: 15px 0;
+}
+
+.feature-text p {
+    color: #a6a29d;
+    line-height: 1.7;
+}
+
+.read {
+    color: #f1ede5;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.stories {
+    padding: 70px 6%;
+    border-top: 1px solid #333;
+}
+
+.stories h2 {
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 25px;
+    line-height: 1.1;
+    margin: 15px 0 10px;
+}
+
+.card p {
+    color: #a6a29d;
+    line-height: 1.5;
+}
+
+.notes {
+    margin: 50px 6% 100px;
+    padding: 50px;
+    background: #202020;
+}
+
+.notes h2 {
+    font-size: 45px;
+    margin-top: 0;
+}
+
+.note-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.note {
+    padding: 25px 0;
+    border-top: 1px solid #444;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.number {
+    color: #b51f36;
+    margin-right: 15px;
+}
+
+footer {
+    background: #0c0c0c;
+    padding: 60px 6%;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 40px;
+    margin: 0 0 10px;
+}
+
+footer p {
+    color: #92908c;
+}
+
+@media (max-width: 800px) {
+
+    .feature {
+        grid-template-columns: 1fr;
+    }
+
+    .feature img {
+        height: 400px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .note-list {
+        grid-template-columns: 1fr;
+    }
+
+    .notes {
+        padding: 30px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="topline">
+        <span>Issue 01 — September 2026</span>
+        <span>THE IN-BETWEEN</span>
+    </div>
+
+    <div class="logo">THE IN-BETWEEN</div>
+
+    <div class="tagline">for girls figuring it out.</div>
+
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="the-edit.html">THE EDIT</a>
+        <a href="life.html">LIFE</a>
+        <a href="school.html">SCHOOL</a>
+        <a href="health.html">HEALTH</a>
+        <a href="future.html">FUTURE</a>
+        <a href="city.html">CITY</a>
+        <a href="culture.html">CULTURE</a>
+        <a href="voices.html">VOICES</a>
+    </nav>
+
+</header>
+
+
+<section class="page-title">
+
+    <p>High School • University • Work</p>
+
+    <h1>SCHOOL</h1>
+
+    <div class="description">
+        Grades, university, jobs, volunteering, exams,
+        applications, and trying to figure out what you're
+        actually supposed to do with your life.
+    </div>
+
+</section>
+
+
+<section class="feature">
+
+    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80">
+
+    <div class="feature-text">
+
+        <span class="category">HIGH SCHOOL</span>
+
+        <h2>What Nobody Tells You About Grade 11</h2>
+
+        <p>
+            Suddenly everything feels important. Your grades,
+            your future, your university choices, your activities —
+            and somehow you're still expected to act like you know
+            exactly what you're doing.
+        </p>
+
+        <a class="read" href="#">READ THE STORY →</a>
+
+    </div>
+
+</section>
+
+
+<section class="stories">
+
+    <h2>More from School</h2>
+
+    <div class="grid">
+
+        <article class="card">
+
+            <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=900&q=80">
+
+            <span class="category">STUDYING</span>
+
+            <h3>How to Study When You Really Don't Want To</h3>
+
+            <p>
+                For when your notes are open but absolutely nothing
+                is entering your brain.
+            </p>
+
+        </article>
+
+
+        <article class="card">
+
+            <img src="https://images.unsplash.com/photo-1453738773917-9c3eff1db985?auto=format&fit=crop&w=900&q=80">
+
+            <span class="category">FUTURE</span>
+
+            <h3>The University Question</h3>
+
+            <p>
+                Everyone keeps asking what you're going to do.
+                What if you genuinely don't know yet?
+            </p>
+
+        </article>
+
+
+        <article class="card">
+
+            <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=80">
+
+            <span class="category">EXPERIENCE</span>
+
+            <h3>How to Get Experience Before You Have Experience</h3>
+
+            <p>
+                Volunteering, part-time jobs, clubs and the little
+                things that can actually add up.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<section class="notes">
+
+    <h2>Things We're Figuring Out</h2>
+
+    <div class="note-list">
+
+        <div class="note">
+            <span class="number">01</span>
+            How to balance school and having an actual life.
+        </div>
+
+        <div class="note">
+            <span class="number">02</span>
+            Whether grades actually define you.
+        </div>
+
+        <div class="note">
+            <span class="number">03</span>
+            How to ask for a reference without feeling awkward.
+        </div>
+
+        <div class="note">
+            <span class="number">04</span>
+            Getting a first job.
+        </div>
+
+        <div class="note">
+            <span class="number">05</span>
+            Figuring out what you want to study.
+        </div>
+
+        <div class="note">
+            <span class="number">06</span>
+            Applying for things even when you're nervous.
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <h2>THE IN-BETWEEN</h2>
+
+    <p>for girls figuring it out.</p>
+
+</footer>
+
+</body>
+</html>
