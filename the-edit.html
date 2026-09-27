@@ -1,1 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>THE EDIT — THE IN-BETWEEN</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #151515;
+    color: #f1ede5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 25px 6%;
+    border-bottom: 1px solid #333;
+}
+
+.topline {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #a6a29d;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.logo {
+    text-align: center;
+    font-size: clamp(55px, 12vw, 150px);
+    font-weight: 900;
+    letter-spacing: -7px;
+    margin: 30px 0 15px;
+}
+
+.tagline {
+    text-align: center;
+    color: #b97882;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+nav a {
+    color: #f1ede5;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+nav a:hover {
+    color: #b51f36;
+}
+
+.page-title {
+    padding: 80px 6% 40px;
+}
+
+.page-title p {
+    color: #b51f36;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.page-title h1 {
+    font-size: clamp(60px, 13vw, 160px);
+    line-height: .8;
+    margin: 10px 0;
+    letter-spacing: -6px;
+}
+
+.page-title .description {
+    max-width: 600px;
+    color: #a6a29d;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 30px;
+}
+
+.feature {
+    margin: 20px 6% 90px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 35px;
+}
+
+.feature img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+.feature-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.category {
+    color: #b51f36;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.feature-text h2 {
+    font-size: 50px;
+    line-height: 1;
+    margin: 15px 0;
+}
+
+.feature-text p {
+    color: #a6a29d;
+    line-height: 1.7;
+}
+
+.read {
+    color: #f1ede5;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.stories {
+    padding: 70px 6%;
+    border-top: 1px solid #333;
+}
+
+.stories h2 {
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 25px;
+    line-height: 1.1;
+    margin: 15px 0 10px;
+}
+
+.card p {
+    color: #a6a29d;
+    line-height: 1.5;
+}
+
+.trends {
+    margin: 50px 6% 100px;
+    padding: 50px;
+    background: #202020;
+}
+
+.trends h2 {
+    font-size: 45px;
+    margin-top: 0;
+}
+
+.trend-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+}
+
+.trend {
+    padding: 25px 0;
+    border-top: 1px solid #444;
+    font-size: 18px;
+}
+
+.number {
+    color: #b51f36;
+    margin-right: 15px;
+}
+
+footer {
+    background: #0c0c0c;
+    padding: 60px 6%;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 40px;
+    margin: 0 0 10px;
+}
+
+footer p {
+    color: #92908c;
+}
+
+@media (max-width: 800px) {
+
+    .feature {
+        grid-template-columns: 1fr;
+    }
+
+    .feature img {
+        height: 400px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trend-list {
+        grid-template-columns: 1fr;
+    }
+
+    .trends {
+        padding: 30px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="topline">
+        <span>Issue 01 — September 2026</span>
+        <span>THE IN-BETWEEN</span>
+    </div>
+
+    <div class="logo">THE IN-BETWEEN</div>
+
+    <div class="tagline">for girls figuring it out.</div>
+
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="the-edit.html">THE EDIT</a>
+        <a href="life.html">LIFE</a>
+        <a href="school.html">SCHOOL</a>
+        <a href="health.html">HEALTH</a>
+        <a href="future.html">FUTURE</a>
+        <a href="city.html">CITY</a>
+        <a href="culture.html">CULTURE</a>
+        <a href="voices.html">VOICES</a>
+    </nav>
+
+</header>
+
+
+<section class="page-title">
+
+    <p>Fashion • Beauty • Style</p>
+
+    <h1>THE EDIT</h1>
+
+    <div class="description">
+        What we're wearing, saving, screenshotting, buying,
+        re-wearing, and pretending we didn't spend too much money on.
+    </div>
+
+</section>
+
+
+<section class="feature">
+
+    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80">
+
+    <div class="feature-text">
+
+        <span class="category">STYLE</span>
+
+        <h2>Getting Dressed When You Feel Like You Have Nothing to Wear</h2>
+
+        <p>
+            Your closet is full. Your floor is covered in clothes.
+            Somehow, you still have absolutely nothing to wear.
+            Here's why getting dressed can feel harder than it should.
+        </p>
+
+        <a class="read" href="#">READ THE STORY →</a>
+
+    </div>
+
+</section>
+
+
+<section class="stories">
+
+    <h2>More from The Edit</h2>
+
+    <div class="grid">
+
+        <article class="card">
+
+            <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80">
+
+            <span class="category">FASHION</span>
+
+            <h3>The Pieces Everyone Keeps Wearing Again</h3>
+
+            <p>
+                The outfits that somehow never actually go out of style.
+            </p>
+
+        </article>
+
+
+        <article class="card">
+
+            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=900&q=80">
+
+            <span class="category">BEAUTY</span>
+
+            <h3>What Actually Makes a Beauty Routine Feel Like Yours?</h3>
+
+            <p>
+                Trends come and go. Your routine doesn't have to.
+            </p>
+
+        </article>
+
+
+        <article class="card">
+
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80">
+
+            <span class="category">STYLE</span>
+
+            <h3>How to Make a Basic Outfit Look Less Basic</h3>
+
+            <p>
+                Small changes that completely change an outfit.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<section class="trends">
+
+    <h2>Right Now</h2>
+
+    <div class="trend-list">
+
+        <div class="trend">
+            <span class="number">01</span>
+            Oversized jackets
+        </div>
+
+        <div class="trend">
+            <span class="number">02</span>
+            Silver jewellery
+        </div>
+
+        <div class="trend">
+            <span class="number">03</span>
+            Messy hair
+        </div>
+
+        <div class="trend">
+            <span class="number">04</span>
+            Tiny bags
+        </div>
+
+        <div class="trend">
+            <span class="number">05</span>
+            Thrifted pieces
+        </div>
+
+        <div class="trend">
+            <span class="number">06</span>
+            Outfits that look effortless
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <h2>THE IN-BETWEEN</h2>
+
+    <p>for girls figuring it out.</p>
+
+</footer>
+
+</body>
+</html>
