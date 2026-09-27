@@ -1,1 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>HEALTH — THE IN-BETWEEN</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #151515;
+    color: #f1ede5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 25px 6%;
+    border-bottom: 1px solid #333;
+}
+
+.topline {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #a6a29d;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.logo {
+    text-align: center;
+    font-size: clamp(55px, 12vw, 150px);
+    font-weight: 900;
+    letter-spacing: -7px;
+    margin: 30px 0 15px;
+}
+
+.tagline {
+    text-align: center;
+    color: #b97882;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+nav a {
+    color: #f1ede5;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+nav a:hover {
+    color: #b51f36;
+}
+
+.page-title {
+    padding: 80px 6% 40px;
+}
+
+.page-title p {
+    color: #b51f36;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.page-title h1 {
+    font-size: clamp(60px, 13vw, 160px);
+    line-height: .8;
+    margin: 10px 0;
+    letter-spacing: -6px;
+}
+
+.description {
+    max-width: 650px;
+    color: #a6a29d;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 30px;
+}
+
+.feature {
+    margin: 20px 6% 90px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 35px;
+}
+
+.feature img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+.feature-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.category {
+    color: #b51f36;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.feature-text h2 {
+    font-size: 50px;
+    line-height: 1;
+    margin: 15px 0;
+}
+
+.feature-text p {
+    color: #a6a29d;
+    line-height: 1.7;
+}
+
+.read {
+    color: #f1ede5;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.stories {
+    padding: 70px 6%;
+    border-top: 1px solid #333;
+}
+
+.stories h2 {
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 25px;
+    line-height: 1.1;
+    margin: 15px 0 10px;
+}
+
+.card p {
+    color: #a6a29d;
+    line-height: 1.5;
+}
+
+.facts {
+    margin: 50px 6% 100px;
+    padding: 50px;
+    background: #202020;
+}
+
+.facts h2 {
+    font-size: 45px;
+    margin-top: 0;
+}
+
+.fact-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.fact {
+    padding: 25px 0;
+    border-top: 1px solid #444;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.number {
+    color: #b51f36;
+    margin-right: 15px;
+}
+
+footer {
+    background: #0c0c0c;
+    padding: 60px 6%;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 40px;
+    margin: 0 0 10px;
+}
+
+footer p {
+    color: #92908c;
+}
+
+@media (max-width: 800px) {
+
+    .feature {
+        grid-template-columns: 1fr;
+    }
+
+    .feature img {
+        height: 400px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fact-list {
+        grid-template-columns: 1fr;
+    }
+
+    .facts {
+        padding: 30px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="topline">
+        <span>Issue 01 — September 2026</span>
+        <span>THE IN-BETWEEN</span>
+    </div>
+
+    <div class="logo">THE IN-BETWEEN</div>
+
+    <div class="tagline">for girls figuring it out.</div>
+
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="the-edit.html">THE EDIT</a>
+        <a href="life.html">LIFE</a>
+        <a href="school.html">SCHOOL</a>
+        <a href="health.html">HEALTH</a>
+        <a href="future.html">FUTURE</a>
+        <a href="city.html">CITY</a>
+        <a href="culture.html">CULTURE</a>
+        <a href="voices.html">VOICES</a>
+    </nav>
+
+</header>
+
+
+<section class="page-title">
+
+    <p>Body • Mind • Wellbeing</p>
+
+    <h1>HEALTH</h1>
+
+    <div class="description">
+        The stuff we're told to know about our bodies,
+        the things nobody really explains, and learning
+        how to take care of yourself without making it complicated.
+    </div>
+
+</section>
+
+
+<section class="feature">
+
+    <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=1200&q=80">
+
+    <div class="feature-text">
+
+        <span class="category">WELLBEING</span>
+
+        <h2>You Don't Have to Have Your Life Completely Together</h2>
+
+        <p>
+            Eating well, sleeping enough, moving your body and
+            taking care of yourself sound simple until school,
+            friends, work and everything else get in the way.
+        </p>
+
+        <a class="read" href="#">READ THE STORY →</a>
+
+    </div>
+
+</section>
+
+
+<section class="stories">
+
+    <h2>More from Health</h2>
+
+    <div class="grid">
+
+        <article class="card">
+
+            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=900&q=80">
+
+            <span class="category">SLEEP</span>
+
+            <h3>Why Are We Always So Tired?</h3>
+
+            <p>
+                School, screens, late nights and trying to do
+                everything at once can seriously mess with sleep.
+            </p>
+
+        </article>
+
+
+        <article class="card">
+
+            <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=900&q=80">
+
+            <span class="category">FOOD</span>
+
+            <h3>Food Doesn't Have to Be Complicated</h3>
+
+            <p>
+                Forget perfect routines. Let's talk about actually
+                eating enough when you're busy.
+            </p>
+
+        </article>
+
+
+        <article class="card">
+
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=900&q=80">
+
+            <span class="category">MOVEMENT</span>
+
+            <h3>Finding Movement You Actually Like</h3>
+
+            <p>
+                You don't have to become a gym person to move your body.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<section class="facts">
+
+    <h2>Things Worth Knowing</h2>
+
+    <div class="fact-list">
+
+        <div class="fact">
+            <span class="number">01</span>
+            Your body doesn't have to look like anyone else's.
+        </div>
+
+        <div class="fact">
+            <span class="number">02</span>
+            Sleep is actually important. Very important.
+        </div>
+
+        <div class="fact">
+            <span class="number">03</span>
+            Asking questions about your health is normal.
+        </div>
+
+        <div class="fact">
+            <span class="number">04</span>
+            You don't need to follow every wellness trend.
+        </div>
+
+        <div class="fact">
+            <span class="number">05</span>
+            Taking a break doesn't mean you're lazy.
+        </div>
+
+        <div class="fact">
+            <span class="number">06</span>
+            Getting help when you need it is completely okay.
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <h2>THE IN-BETWEEN</h2>
+
+    <p>for girls figuring it out.</p>
+
+</footer>
+
+</body>
+</html>
