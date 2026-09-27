@@ -1,1 +1,731 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>The In-Between</title> <style> * { box-sizing: border-box; margin: 0; padding: 0; } body { background: #f4f0e8; color: #171717; font-family: Arial, Helvetica, sans-serif; line-height: 1.5; } /* HEADER */ header { padding: 20px 6%; border-bottom: 1px solid #171717; } .top { display: flex; justify-content: space-between; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; } .logo { font-family: Georgia, serif; font-size: clamp(55px, 11vw, 135px); line-height: .85; text-align: center; letter-spacing: -6px; margin: 40px 0 20px; } .tagline { text-align: center; font-family: Georgia, serif; font-style: italic; font-size: 17px; margin-bottom: 35px; } nav { border-top: 1px solid #171717; padding-top: 15px; display: flex; justify-content: center; flex-wrap: wrap; gap: 25px; } nav a { text-decoration: none; color: #171717; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; } nav a:hover { color: #8b1e2d; } /* MAIN */ main { width: 88%; max-width: 1250px; margin: 55px auto; } .issue { color: #8b1e2d; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 15px; } /* HERO */ .hero { display: grid; grid-template-columns: 1.1fr 1fr; gap: 50px; border-bottom: 2px solid #171717; padding-bottom: 55px; } .hero h1 { font-family: Georgia, serif; font-size: clamp(48px, 6vw, 82px); font-weight: normal; line-height: .93; letter-spacing: -4px; margin-bottom: 25px; } .hero-description { font-size: 16px; max-width: 520px; } .hero-meta { margin-top: 25px; font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; } .hero-meta span { color: #8b1e2d; } .hero-photo { min-height: 520px; background: linear-gradient(rgba(0,0,0,.08), rgba(0,0,0,.08)), url("https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=85"); background-size: cover; background-position: center; filter: grayscale(20%); } .note { font-family: "Comic Sans MS", cursive; font-size: 15px; margin-top: 20px; transform: rotate(-3deg); display: inline-block; } /* SECTION HEADERS */ .section-heading { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid #171717; padding-bottom: 10px; margin: 65px 0 25px; } .section-heading h2 { font-family: Georgia, serif; font-weight: normal; font-size: 40px; } .section-heading span { font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; } /* ARTICLES */ .articles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; } .article { border-bottom: 1px solid #171717; padding-bottom: 25px; } .article-photo { width: 100%; height: 270px; object-fit: cover; filter: grayscale(30%); margin-bottom: 18px; } .category { color: #8b1e2d; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px; } .article h3 { font-family: Georgia, serif; font-size: 27px; line-height: 1.05; font-weight: normal; margin-bottom: 10px; } .article p { font-size: 14px; } /* REAL TALK */ .real-talk { margin-top: 80px; padding: 45px 7%; border-top: 2px solid #171717; border-bottom: 2px solid #171717; text-align: center; } .real-talk-label { color: #8b1e2d; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; } .real-talk h2 { font-family: Georgia, serif; font-size: 48px; font-weight: normal; margin: 10px 0 20px; } .quote { font-family: Georgia, serif; font-style: italic; font-size: 22px; max-width: 700px; margin: auto; } /* ABOUT */ .about { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; margin-top: 80px; padding-bottom: 60px; } .about h2 { font-family: Georgia, serif; font-size: 55px; font-weight: normal; line-height: .95; } .about p { font-size: 16px; max-width: 550px; } /* FOOTER */ footer { border-top: 1px solid #171717; padding: 30px 6%; display: flex; justify-content: space-between; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; } /* MOBILE */ @media (max-width: 800px) { .hero { grid-template-columns: 1fr; } .hero-photo { min-height: 400px; } .articles { grid-template-columns: 1fr; } .about { grid-template-columns: 1fr; } .logo { letter-spacing: -4px; } nav { gap: 14px; } footer { flex-direction: column; gap: 10px; } } </style> </head> <body> <header> <div class="top"> <span>Issue 01</span> <span>September 2026</span> </div> <div class="logo"> THE IN-BETWEEN </div> <div class="tagline"> A magazine for everything we're figuring out. </div> <nav> <a href="#">Life</a> <a href="#">School</a> <a href="#">Health</a> <a href="#">Science</a> <a href="#">Future</a> <a href="#">Travel</a> <a href="#">Culture</a> <a href="#">Voices</a> </nav> </header> <main> <div class="issue"> Issue 01 — Figuring It Out </div> <section class="hero"> <div> <h1> Does Everyone Actually Know What They're Doing? </h1> <p class="hero-description"> We're constantly asked what we're doing after high school, what we're studying, where we're going and who we're becoming. But what happens when you don't have all the answers yet? </p> <p class="hero-meta"> Words by <span>The In-Between</span> · 6 min read </p> <span class="note"> honestly... who does? </span> </div> <div class="hero-photo"></div> </section> <div class="section-heading"> <h2>From This Issue</h2> <span>Issue 01</span> </div> <section class="articles"> <article class="article"> <img class="article-photo" src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=900&q=85" alt="Friends together" > <div class="category">Life</div> <h3> The Weird Middle Ground Between Childhood and Adulthood </h3> <p> Somewhere between being a kid and becoming an adult, everything starts to feel a little confusing. </p> </article> <article class="article"> <img class="article-photo" src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=85" alt="Students studying" > <div class="category">School</div> <h3> How to Build a Resume Before You Have a Resume </h3> <p> Volunteering, school clubs, part-time jobs and the things that actually count when you're just getting started. </p> </article> <article class="article"> <img class="article-photo" src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=85" alt="Healthcare professional" > <div class="category">Health</div> <h3> So... What Actually Happens During an Allergic Reaction? </h3> <p> A simple look at what is happening inside your body during an allergic reaction. </p> </article> </section> <section class="real-talk"> <div class="real-talk-label"> Real Talk </div> <h2> What are you most nervous about after high school? </h2> <p class="quote"> "Honestly, I feel like everyone expects me to have a plan when I'm still trying to figure out what I even like." </p> </section> <section class="about"> <h2> We're all<br> figuring it out. </h2> <p> Being a teenager is a strange place to be. You're old enough to start making decisions about your future, but young enough to still be figuring out who you are. <br><br> The In-Between is a digital magazine about the questions, stories and experiences that come with growing up. </p> </section> </main> <footer> <span>The In-Between</span> <span>Issue 01 · 2026</span> <span>Made for the years in between.</span> </footer> </body> </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>THE IN-BETWEEN</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #f5f0e8;
+      color: #171717;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* HEADER */
+
+    header {
+      padding: 18px 4vw 0;
+      border-bottom: 1px solid #171717;
+    }
+
+    .top-line {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+
+    .logo {
+      text-align: center;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(60px, 13vw, 175px);
+      line-height: 0.8;
+      letter-spacing: -7px;
+      margin-bottom: 25px;
+    }
+
+    .tagline {
+      text-align: center;
+      font-family: Georgia, "Times New Roman", serif;
+      font-style: italic;
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      padding: 14px 0;
+      border-top: 1px solid #171717;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+    }
+
+    nav a:hover {
+      color: #9c1c2c;
+    }
+
+    /* HERO */
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      min-height: 650px;
+      border-bottom: 1px solid #171717;
+    }
+
+    .hero-image {
+      background-image: url("https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=85");
+      background-size: cover;
+      background-position: center;
+      min-height: 650px;
+    }
+
+    .hero-text {
+      padding: 65px 5vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: #e8dfd2;
+    }
+
+    .eyebrow {
+      color: #9c1c2c;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(48px, 6vw, 85px);
+      line-height: 0.92;
+      font-weight: normal;
+      letter-spacing: -3px;
+      margin-bottom: 25px;
+    }
+
+    .hero p {
+      max-width: 430px;
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+
+    .read-more {
+      display: inline-block;
+      border-bottom: 1px solid #171717;
+      width: fit-content;
+      padding-bottom: 5px;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .read-more:hover {
+      color: #9c1c2c;
+      border-color: #9c1c2c;
+    }
+
+    /* MARQUEE */
+
+    .marquee {
+      overflow: hidden;
+      white-space: nowrap;
+      border-bottom: 1px solid #171717;
+      padding: 13px 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 19px;
+      font-style: italic;
+    }
+
+    .marquee span {
+      margin-right: 35px;
+    }
+
+    /* SECTIONS */
+
+    .section {
+      padding: 70px 4vw;
+      border-bottom: 1px solid #171717;
+    }
+
+    .section-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 35px;
+    }
+
+    .section-heading h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 48px;
+      font-weight: normal;
+      letter-spacing: -2px;
+    }
+
+    .section-heading span {
+      color: #9c1c2c;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    /* ARTICLE GRID */
+
+    .articles {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .article {
+      cursor: pointer;
+    }
+
+    .article-image {
+      height: 430px;
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 18px;
+      filter: saturate(85%);
+    }
+
+    .article:nth-child(1) .article-image {
+      background-image: url("https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=85");
+    }
+
+    .article:nth-child(2) .article-image {
+      background-image: url("https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=800&q=85");
+    }
+
+    .article:nth-child(3) .article-image {
+      background-image: url("https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=85");
+    }
+
+    .article-category {
+      color: #9c1c2c;
+      font-size: 10px;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 9px;
+    }
+
+    .article h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 27px;
+      font-weight: normal;
+      line-height: 1.05;
+      margin-bottom: 10px;
+    }
+
+    .article p {
+      font-size: 13px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    /* SPLIT FEATURE */
+
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 600px;
+      border-bottom: 1px solid #171717;
+    }
+
+    .split-image {
+      background-image: url("https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1200&q=85");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .split-text {
+      padding: 70px 7vw;
+      background: #171717;
+      color: #f5f0e8;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .split-text .eyebrow {
+      color: #e39aa4;
+    }
+
+    .split-text h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: normal;
+      font-size: clamp(45px, 5vw, 70px);
+      line-height: 0.95;
+      letter-spacing: -2px;
+      margin-bottom: 25px;
+    }
+
+    .split-text p {
+      font-size: 14px;
+      line-height: 1.7;
+      max-width: 430px;
+      color: #d6d0c8;
+      margin-bottom: 30px;
+    }
+
+    .split-text .read-more {
+      border-color: #f5f0e8;
+    }
+
+    /* GIRLS WE KNOW */
+
+    .girls {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .girl-card {
+      border-top: 1px solid #171717;
+      padding-top: 15px;
+    }
+
+    .girl-number {
+      color: #9c1c2c;
+      font-size: 11px;
+      margin-bottom: 20px;
+    }
+
+    .girl-card h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 28px;
+      font-weight: normal;
+      margin-bottom: 12px;
+    }
+
+    .girl-card p {
+      font-size: 13px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    /* REAL TALK */
+
+    .real-talk {
+      background: #d9aeb1;
+      text-align: center;
+      padding: 100px 20px;
+      border-bottom: 1px solid #171717;
+    }
+
+    .real-talk .small {
+      font-size: 10px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .real-talk h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: normal;
+      font-size: clamp(45px, 7vw, 90px);
+      line-height: 0.9;
+      letter-spacing: -4px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .real-talk p {
+      max-width: 550px;
+      margin: 25px auto;
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 50px 4vw 30px;
+      background: #171717;
+      color: #f5f0e8;
+    }
+
+    .footer-logo {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(55px, 10vw, 130px);
+      letter-spacing: -5px;
+      margin-bottom: 35px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #555;
+      padding-top: 18px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 10px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 800px) {
+
+      .logo {
+        font-size: 58px;
+        letter-spacing: -3px;
+      }
+
+      nav {
+        gap: 15px;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-image {
+        min-height: 500px;
+      }
+
+      .hero-text {
+        padding: 55px 8vw;
+      }
+
+      .articles {
+        grid-template-columns: 1fr;
+      }
+
+      .article-image {
+        height: 500px;
+      }
+
+      .split {
+        grid-template-columns: 1fr;
+      }
+
+      .split-image {
+        min-height: 500px;
+      }
+
+      .girls {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px 20px;
+      }
+
+      .section-heading h2 {
+        font-size: 40px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+
+    @media (max-width: 500px) {
+
+      .top-line {
+        font-size: 9px;
+      }
+
+      .logo {
+        font-size: 48px;
+      }
+
+      .hero-image {
+        min-height: 430px;
+      }
+
+      .article-image {
+        height: 430px;
+      }
+
+      .girls {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="top-line">
+      <span>Issue 01 — September 2026</span>
+      <span>Online Magazine</span>
+    </div>
+
+    <div class="logo">
+      THE IN-BETWEEN
+    </div>
+
+    <div class="tagline">
+      for girls figuring it out.
+    </div>
+
+    <nav>
+      <a href="#">THE EDIT</a>
+      <a href="#">LIFE</a>
+      <a href="#">SCHOOL</a>
+      <a href="#">HEALTH</a>
+      <a href="#">FUTURE</a>
+      <a href="#">CITY</a>
+      <a href="#">CULTURE</a>
+      <a href="#">VOICES</a>
+    </nav>
+
+  </header>
+
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-image"></div>
+
+    <div class="hero-text">
+
+      <div class="eyebrow">
+        Cover Story — Life
+      </div>
+
+      <h1>
+        Everyone Is Figuring It Out.
+      </h1>
+
+      <p>
+        School. Friendships. What comes next.
+        Somehow everyone expects us to have a plan
+        before we've even figured out who we are.
+      </p>
+
+      <a class="read-more" href="#">
+        Read the story →
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- MARQUEE -->
+
+  <div class="marquee">
+    <span>WHAT WE'RE WEARING</span>
+    <span>WHAT WE'RE LISTENING TO</span>
+    <span>WHERE WE'RE GOING</span>
+    <span>WHAT WE'RE FIGURING OUT</span>
+    <span>WHAT WE'RE NOT SAYING</span>
+  </div>
+
+
+  <!-- THE EDIT -->
+
+  <section class="section">
+
+    <div class="section-heading">
+      <h2>The Edit</h2>
+      <span>Fashion / Beauty / Style</span>
+    </div>
+
+    <div class="articles">
+
+      <article class="article">
+        <div class="article-image"></div>
+
+        <div class="article-category">
+          Style
+        </div>
+
+        <h3>
+          What Everyone's Wearing When It Gets Cold Again
+        </h3>
+
+        <p>
+          The jackets, shoes, layers and little details
+          we're already saving to our moodboards.
+        </p>
+      </article>
+
+
+      <article class="article">
+        <div class="article-image"></div>
+
+        <div class="article-category">
+          Beauty
+        </div>
+
+        <h3>
+          Getting Ready Is Half the Fun
+        </h3>
+
+        <p>
+          The music, the outfit changes, the makeup on
+          the bathroom counter and the inevitable
+          “what are you wearing?”
+        </p>
+      </article>
+
+
+      <article class="article">
+        <div class="article-image"></div>
+
+        <div class="article-category">
+          Trends
+        </div>
+
+        <h3>
+          Things We Keep Seeing Everywhere
+        </h3>
+
+        <p>
+          A monthly collection of the little things
+          taking over our feeds, closets and group chats.
+        </p>
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- LIFE FEATURE -->
+
+  <section class="split">
+
+    <div class="split-image"></div>
+
+    <div class="split-text">
+
+      <div class="eyebrow">
+        Life
+      </div>
+
+      <h2>
+        When Your Best Friend Doesn't Feel Like Your Best Friend Anymore
+      </h2>
+
+      <p>
+        Growing up changes friendships in ways nobody
+        really warns you about. Sometimes people grow
+        together. Sometimes they grow apart.
+      </p>
+
+      <a class="read-more" href="#">
+        Read more →
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- GIRLS WE KNOW -->
+
+  <section class="section">
+
+    <div class="section-heading">
+      <h2>Girls We Know</h2>
+      <span>People / Interviews</span>
+    </div>
+
+    <div class="girls">
+
+      <div class="girl-card">
+        <div class="girl-number">01</div>
+        <h3>The Artist</h3>
+        <p>
+          What she's making, what inspires her,
+          and what she's still figuring out.
+        </p>
+      </div>
+
+      <div class="girl-card">
+        <div class="girl-number">02</div>
+        <h3>The Student</h3>
+        <p>
+          Balancing school, life and trying to
+          figure out what comes after graduation.
+        </p>
+      </div>
+
+      <div class="girl-card">
+        <div class="girl-number">03</div>
+        <h3>The Dreamer</h3>
+        <p>
+          The places she wants to go and the life
+          she hopes to build for herself.
+        </p>
+      </div>
+
+      <div class="girl-card">
+        <div class="girl-number">04</div>
+        <h3>The Doer</h3>
+        <p>
+          Starting something of her own while
+          everyone else is still deciding what to do.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- REAL TALK -->
+
+  <section class="real-talk">
+
+    <div class="small">
+      Real Talk
+    </div>
+
+    <h2>
+      “I thought I was the only one who felt like this.”
+    </h2>
+
+    <p>
+      Anonymous thoughts from girls figuring out
+      friendships, school, confidence, family,
+      relationships and everything in between.
+    </p>
+
+    <a class="read-more" href="#">
+      Read Real Talk →
+    </a>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="footer-logo">
+      THE IN-BETWEEN
+    </div>
+
+    <div class="footer-bottom">
+      <span>For girls figuring it out.</span>
+      <span>Issue 01 — 2026</span>
+    </div>
+
+  </footer>
+
+</body>
+</html>
