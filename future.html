@@ -1,1 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>FUTURE — THE IN-BETWEEN</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #151515;
+    color: #f1ede5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 25px 6%;
+    border-bottom: 1px solid #333;
+}
+
+.topline {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #a6a29d;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.logo {
+    text-align: center;
+    font-size: clamp(55px, 12vw, 150px);
+    font-weight: 900;
+    letter-spacing: -7px;
+    margin: 30px 0 15px;
+}
+
+.tagline {
+    text-align: center;
+    color: #b97882;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+nav a {
+    color: #f1ede5;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+nav a:hover {
+    color: #b51f36;
+}
+
+.page-title {
+    padding: 80px 6% 40px;
+}
+
+.page-title p {
+    color: #b51f36;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.page-title h1 {
+    font-size: clamp(60px, 13vw, 160px);
+    line-height: .8;
+    margin: 10px 0;
+    letter-spacing: -6px;
+}
+
+.description {
+    max-width: 650px;
+    color: #a6a29d;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 30px;
+}
+
+.feature {
+    margin: 20px 6% 90px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 35px;
+}
+
+.feature img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+.feature-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.category {
+    color: #b51f36;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.feature-text h2 {
+    font-size: 50px;
+    line-height: 1;
+    margin: 15px 0;
+}
+
+.feature-text p {
+    color: #a6a29d;
+    line-height: 1.7;
+}
+
+.read {
+    color: #f1ede5;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.stories {
+    padding: 70px 6%;
+    border-top: 1px solid #333;
+}
+
+.stories h2 {
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 25px;
+    line-height: 1.1;
+    margin: 15px 0 10px;
+}
+
+.card p {
+    color: #a6a29d;
+    line-height: 1.5;
+}
+
+.future-list {
+    margin: 50px 6% 100px;
+    padding: 50px;
+    background: #202020;
+}
+
+.future-list h2 {
+    font-size: 45px;
+    margin-top: 0;
+}
+
+.item {
+    padding: 25px 0;
+    border-top: 1px solid #444;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.number {
+    color: #b51f36;
+    margin-right: 15px;
+}
+
+footer {
+    background: #0c0c0c;
+    padding: 60px 6%;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 40px;
+    margin: 0 0 10px;
+}
+
+footer p {
+    color: #92908c;
+}
+
+@media (max-width: 800px) {
+
+    .feature {
+        grid-template-columns: 1fr;
+    }
+
+    .feature img {
+        height: 400px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .future-list {
+        padding: 30px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="topline">
+        <span>Issue 01 — September 2026</span>
+        <span>THE IN-BETWEEN</span>
+    </div>
+
+    <div class="logo">THE IN-BETWEEN</div>
+
+    <div class="tagline">for girls figuring it out.</div>
+
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="the-edit.html">THE EDIT</a>
+        <a href="life.html">LIFE</a>
+        <a href="school.html">SCHOOL</a>
+        <a href="health.html">HEALTH</a>
+        <a href="future.html">FUTURE</a>
+        <a href="city.html">CITY</a>
+        <a href="culture.html">CULTURE</a>
+        <a href="voices.html">VOICES</a>
+    </nav>
+
+</header>
+
+
+<section class="page-title">
+
+    <p>Careers • Money • Life After School</p>
+
+    <h1>FUTURE</h1>
+
+    <div class="description">
+        Careers we might want, places we might live,
+        money we don't completely understand yet,
+        and figuring out what comes next.
+    </div>
+
+</section>
+
+
+<section class="feature">
+
+    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80">
+
+    <div class="feature-text">
+
+        <span class="category">CAREERS</span>
+
+        <h2>What If You Don't Know What You Want to Do Yet?</h2>
+
+        <p>
+            Everyone asks the question like there's supposed to be
+            one perfect answer. But figuring out what you don't want
+            can be just as useful as figuring out what you do.
+        </p>
+
+        <a class="read" href="#">READ THE STORY →</a>
+
+    </div>
+
+</section>
+
+
+<section class="stories">
+
+    <h2>More from Future</h2>
+
+    <div class="grid">
+
+        <article class="card">
+
+            <img src="https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=900&q=80">
+
+            <span class="category">WORK</span>
+
+            <h3>Getting Your First Job Is Weird</h3>
+
+            <p>
+                Resumes, interviews, awkward emails and trying
+                to convince someone to hire you.
+            </p>
+
+        </article>
+
+
+        <article class="card">
+
+            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80">
+
+            <span class="category">CAREERS</span>
+
+            <h3>Careers You Probably Haven't Thought About</h3>
+
+            <p>
+                There are way more jobs out there than the ones
+                you hear about at school.
+            </p>
+
+        </article>
+
+
+        <article class="card">
+
+            <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=900&q=80">
+
+            <span class="category">TRAVEL</span>
+
+            <h3>Could You Actually Live Somewhere Else?</h3>
+
+            <p>
+                What moving to another city or country might
+                actually look like.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<section class="future-list">
+
+    <h2>Things We're Figuring Out</h2>
+
+    <div class="item">
+        <span class="number">01</span>
+        What career actually fits me?
+    </div>
+
+    <div class="item">
+        <span class="number">02</span>
+        How does money actually work?
+    </div>
+
+    <div class="item">
+        <span class="number">03</span>
+        Should I go to university?
+    </div>
+
+    <div class="item">
+        <span class="number">04</span>
+        What does living on your own cost?
+    </div>
+
+    <div class="item">
+        <span class="number">05</span>
+        Where would I actually want to live?
+    </div>
+
+    <div class="item">
+        <span class="number">06</span>
+        How do people figure all of this out?
+    </div>
+
+</section>
+
+
+<footer>
+
+    <h2>THE IN-BETWEEN</h2>
+
+    <p>for girls figuring it out.</p>
+
+</footer>
+
+</body>
+</html>
