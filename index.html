@@ -512,7 +512,67 @@
       }
 
     }
+/* INTRODUCTION */
+.intro {
+    padding: 100px 8%;
+    border-bottom: 1px solid #333;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 40px;
+}
 
+.intro-label {
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #b97882;
+    font-weight: bold;
+}
+
+.intro-content {
+    max-width: 750px;
+}
+
+.intro-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #a6a29d;
+    margin-bottom: 24px;
+}
+
+.intro-content .intro-opening {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    line-height: 1.4;
+    color: #f1ede5;
+    margin-bottom: 35px;
+}
+
+.intro-content strong {
+    color: #f1ede5;
+}
+
+.intro-content .intro-ending {
+    margin-top: 40px;
+    color: #b51f36;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+@media (max-width: 700px) {
+    .intro {
+        grid-template-columns: 1fr;
+        padding: 70px 6%;
+        gap: 25px;
+    }
+
+    .intro-content .intro-opening {
+        font-size: 25px;
+    }
+
+    .intro-content p {
+        font-size: 16px;
+    }
+}
   </style>
 </head>
 
@@ -603,7 +663,47 @@
   </div>
 
 
+<!-- INTRODUCTION -->
+<section class="intro">
+    <div class="intro-label">WELCOME TO THE IN-BETWEEN</div>
 
+    <div class="intro-content">
+        <p class="intro-opening">
+            There’s a weird part of growing up where you’re not a kid anymore,
+            but you definitely don’t feel like an adult either.
+        </p>
+
+        <p>
+            You’re figuring out what you like, who you want to be, what actually
+            matters to you, and what you’re only pretending to care about.
+            You’re changing your style, making new friends, stressing about
+            school, thinking about the future, going out, staying in, and
+            somehow trying to have your life together at the same time.
+        </p>
+
+        <p>
+            <strong>THE IN-BETWEEN</strong> is for all of that.
+        </p>
+
+        <p>
+            A space for fashion, friendships, school, health, culture, cities,
+            music, the future, and all the little things that make being a
+            teenage girl feel like… a lot.
+        </p>
+
+        <p>
+            No perfect routines. No pretending we have everything figured out.
+        </p>
+
+        <p>
+            Just girls figuring it out, together.
+        </p>
+
+        <p class="intro-ending">
+            <strong>WELCOME TO THE IN-BETWEEN.</strong>
+        </p>
+    </div>
+</section>
   <!-- =========================
        THE EDIT
   ========================= -->
