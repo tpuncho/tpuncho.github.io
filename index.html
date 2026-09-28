@@ -698,6 +698,128 @@
         display: none;
     }
 }
+    /* MOODBOARD */
+
+.moodboard {
+    padding: 110px 8%;
+    background: #151515;
+    border-bottom: 1px solid #333;
+}
+
+.moodboard-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 55px;
+}
+
+.moodboard-heading span {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #b97882;
+}
+
+.moodboard-heading h2 {
+    font-family: Georgia, serif;
+    font-weight: normal;
+    font-size: clamp(42px, 5vw, 70px);
+    line-height: 0.95;
+    color: #f1ede5;
+    margin: 0;
+    max-width: 600px;
+}
+
+.moodboard-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.8fr 0.95fr;
+    gap: 18px;
+    align-items: start;
+}
+
+.mood-card {
+    position: relative;
+}
+
+.mood-card img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    filter: brightness(0.8);
+    transition: 0.4s ease;
+}
+
+.mood-card:hover img {
+    filter: brightness(1);
+    transform: scale(1.015);
+}
+
+.mood-tall img {
+    height: 620px;
+}
+
+.mood-small {
+    margin-top: 90px;
+}
+
+.mood-small img {
+    height: 390px;
+}
+
+.mood-medium {
+    margin-top: 25px;
+}
+
+.mood-medium img {
+    height: 500px;
+}
+
+.mood-caption {
+    padding-top: 14px;
+}
+
+.mood-caption span {
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #b97882;
+}
+
+.mood-caption p {
+    margin: 5px 0 0;
+    color: #a6a29d;
+    font-size: 13px;
+}
+
+@media (max-width: 700px) {
+
+    .moodboard {
+        padding: 75px 6%;
+    }
+
+    .moodboard-heading {
+        display: block;
+    }
+
+    .moodboard-heading h2 {
+        margin-top: 25px;
+        font-size: 43px;
+    }
+
+    .moodboard-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .mood-small,
+    .mood-medium {
+        margin-top: 0;
+    }
+
+    .mood-tall img,
+    .mood-small img,
+    .mood-medium img {
+        height: 450px;
+    }
+}
   </style>
 </head>
 
@@ -835,6 +957,43 @@
             <strong>WELCOME TO THE IN-BETWEEN.</strong>
         </p>
     </div>
+</section>
+  <!-- MOODBOARD -->
+<section class="moodboard">
+
+  <div class="moodboard-heading">
+    <span>THE MOOD</span>
+    <h2>Late nights.<br>New places.<br>Figuring it out.</h2>
+  </div>
+
+  <div class="moodboard-grid">
+
+    <div class="mood-card mood-tall">
+      <img src="https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=1200&q=85" alt="Downtown city at night">
+      <div class="mood-caption">
+        <span>01 — DOWNTOWN</span>
+        <p>somewhere after midnight</p>
+      </div>
+    </div>
+
+    <div class="mood-card mood-small">
+      <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1000&q=85" alt="Street style outfit">
+      <div class="mood-caption">
+        <span>02 — THE EDIT</span>
+        <p>what we're wearing</p>
+      </div>
+    </div>
+
+    <div class="mood-card mood-medium">
+      <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1000&q=85" alt="Friends spending time together">
+      <div class="mood-caption">
+        <span>03 — LIFE</span>
+        <p>no plans, just go</p>
+      </div>
+    </div>
+
+  </div>
+
 </section>
   <!-- =========================
        THE EDIT
