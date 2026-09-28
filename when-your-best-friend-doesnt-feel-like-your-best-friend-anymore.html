@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>When Your Best Friend Doesn't Feel Like Your Best Friend Anymore — THE IN-BETWEEN</title>
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #151515;
+      color: #f1ede5;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    /* HEADER */
+
+    header {
+      padding: 25px 8%;
+      border-bottom: 1px solid #333;
+      background: #151515;
+    }
+
+    .top-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 35px;
+    }
+
+    .issue {
+      font-size: 9px;
+      letter-spacing: 2px;
+      color: #a6a29d;
+    }
+
+    .online {
+      font-size: 9px;
+      letter-spacing: 2px;
+      color: #b97882;
+    }
+
+    .logo {
+      font-family: Georgia, serif;
+      font-size: clamp(50px, 9vw, 110px);
+      line-height: 0.85;
+      letter-spacing: -5px;
+      margin: 0;
+    }
+
+    .tagline {
+      margin-top: 15px;
+      color: #a6a29d;
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-size: 10px;
+      letter-spacing: 2px;
+      color: #a6a29d;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #f1ede5;
+    }
+
+    /* ARTICLE HERO */
+
+    .article-hero {
+      position: relative;
+      min-height: 75vh;
+      display: flex;
+      align-items: flex-end;
+      padding: 80px 8%;
+      overflow: hidden;
+    }
+
+    .article-image {
+      position: absolute;
+      inset: 0;
+
+      background-image:
+        linear-gradient(
+          to top,
+          rgba(10, 10, 10, 0.96),
+          rgba(10, 10, 10, 0.35),
+          rgba(10, 10, 10, 0.2)
+        ),
+        url("https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=2000&q=85");
+
+      background-size: cover;
+      background-position: center;
+      filter: brightness(0.75);
+    }
+
+    .article-hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 1000px;
+    }
+
+    .category {
+      font-size: 10px;
+      letter-spacing: 3px;
+      color: #d39aa3;
+      margin-bottom: 25px;
+    }
+
+    .article-hero h1 {
+      font-family: Georgia, serif;
+      font-weight: normal;
+      font-size: clamp(50px, 7vw, 100px);
+      line-height: 0.92;
+      letter-spacing: -4px;
+      margin: 0 0 30px;
+      max-width: 950px;
+    }
+
+    .deck {
+      max-width: 650px;
+      font-size: 18px;
+      line-height: 1.7;
+      color: #ddd8d0;
+      margin: 0;
+    }
+
+    /* ARTICLE */
+
+    .article {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 100px 30px;
+    }
+
+    .article-meta {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #333;
+      padding-bottom: 20px;
+      margin-bottom: 70px;
+
+      font-size: 9px;
+      letter-spacing: 2px;
+      color: #92908c;
+    }
+
+    .article p {
+      font-size: 18px;
+      line-height: 1.9;
+      color: #c9c5bf;
+      margin: 0 0 28px;
+    }
+
+    .article h2 {
+      font-family: Georgia, serif;
+      font-weight: normal;
+      font-size: clamp(35px, 5vw, 55px);
+      line-height: 1;
+      margin: 80px 0 30px;
+      color: #f1ede5;
+      letter-spacing: -1px;
+    }
+
+    .article strong {
+      color: #f1ede5;
+    }
+
+    .pull-quote {
+      border-left: 2px solid #b51f36;
+      padding: 20px 0 20px 30px;
+      margin: 60px 0;
+      font-family: Georgia, serif;
+      font-size: clamp(25px, 4vw, 38px);
+      line-height: 1.2;
+      color: #f1ede5;
+    }
+
+    .article-end {
+      margin-top: 90px;
+      padding-top: 40px;
+      border-top: 1px solid #333;
+    }
+
+    .back-link {
+      display: inline-block;
+      color: #f1ede5;
+      text-decoration: none;
+      font-size: 10px;
+      letter-spacing: 2px;
+      border-bottom: 1px solid #b51f36;
+      padding-bottom: 8px;
+      transition: 0.3s ease;
+    }
+
+    .back-link:hover {
+      color: #d39aa3;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #0c0c0c;
+      padding: 70px 8%;
+      border-top: 1px solid #333;
+    }
+
+    .footer-logo {
+      font-family: Georgia, serif;
+      font-size: 45px;
+      letter-spacing: -2px;
+    }
+
+    .footer-text {
+      color: #92908c;
+      font-size: 12px;
+      margin-top: 10px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 700px) {
+
+      header {
+        padding: 20px 6%;
+      }
+
+      .logo {
+        font-size: 55px;
+        letter-spacing: -3px;
+      }
+
+      nav {
+        gap: 15px;
+      }
+
+      .article-hero {
+        min-height: 78vh;
+        padding: 55px 6%;
+      }
+
+      .article-hero h1 {
+        font-size: 52px;
+        letter-spacing: -3px;
+      }
+
+      .deck {
+        font-size: 16px;
+      }
+
+      .article {
+        padding: 75px 6%;
+      }
+
+      .article-meta {
+        display: block;
+        line-height: 2;
+      }
+
+      .article p {
+        font-size: 17px;
+      }
+
+      .article h2 {
+        font-size: 38px;
+        margin-top: 65px;
+      }
+
+      .pull-quote {
+        font-size: 27px;
+        padding-left: 20px;
+      }
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="top-line">
+      <div class="issue">ISSUE 01 — SEPTEMBER 2026</div>
+      <div class="online">ONLINE MAGAZINE</div>
+    </div>
+
+    <a href="index.html" style="text-decoration: none;">
+      <h1 class="logo">THE IN-BETWEEN</h1>
+    </a>
+
+    <div class="tagline">
+      for girls figuring it out.
+    </div>
+
+    <nav>
+      <a href="the-edit.html">THE EDIT</a>
+      <a href="life.html">LIFE</a>
+      <a href="school.html">SCHOOL</a>
+      <a href="health.html">HEALTH</a>
+      <a href="future.html">FUTURE</a>
+      <a href="city.html">CITY</a>
+      <a href="culture.html">CULTURE</a>
+      <a href="voices.html">VOICES</a>
+    </nav>
+
+  </header>
+
+
+  <!-- ARTICLE HERO -->
+
+  <section class="article-hero">
+
+    <div class="article-image"></div>
+
+    <div class="article-hero-content">
+
+      <div class="category">
+        LIFE — ARTICLE 02
+      </div>
+
+      <h1>
+        When Your Best Friend Doesn't Feel Like Your Best Friend Anymore.
+      </h1>
+
+      <p class="deck">
+        Sometimes nobody does anything wrong.
+        You just wake up one day and realize things aren't the same.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- ARTICLE -->
+
+  <main class="article">
+
+    <div class="article-meta">
+      <span>THE IN-BETWEEN</span>
+      <span>ISSUE 01 / LIFE</span>
+    </div>
+
+
+    <p>
+      There’s a weird kind of sadness that comes with realizing you don't talk to someone the way you used to.
+    </p>
+
+    <p>
+      Not because you had a huge fight.
+    </p>
+
+    <p>
+      Not because someone betrayed someone.
+    </p>
+
+    <p>
+      Not because there was some dramatic ending where you both decided you weren't friends anymore.
+    </p>
+
+    <p>
+      Sometimes nothing happens.
+    </p>
+
+    <p>
+      You just slowly stop being as close.
+    </p>
+
+    <p>
+      And honestly, that can feel worse.
+    </p>
+
+    <p>
+      Because when there's a reason, at least you know what you're supposed to be upset about.
+    </p>
+
+    <p>
+      But when there isn't one?
+    </p>
+
+    <p>
+      You're just left wondering when everything changed.
+    </p>
+
+
+    <h2>
+      You used to tell them everything.
+    </h2>
+
+    <p>
+      The random things.
+    </p>
+
+    <p>
+      The embarrassing things.
+    </p>
+
+    <p>
+      The things that weren't even worth telling anyone else.
+    </p>
+
+    <p>
+      You'd send them a picture of something stupid you saw on the way home.
+    </p>
+
+    <p>
+      You'd text them the second something happened.
+    </p>
+
+    <p>
+      You'd know what they were doing without even asking.
+    </p>
+
+    <p>
+      And then, slowly, you don't.
+    </p>
+
+    <p>
+      You still talk.
+    </p>
+
+    <p>
+      You still like each other's posts.
+    </p>
+
+    <p>
+      You still say hi at school.
+    </p>
+
+    <p>
+      But something feels different.
+    </p>
+
+    <p>
+      Maybe you don't text first anymore.
+    </p>
+
+    <p>
+      Maybe they don't either.
+    </p>
+
+    <p>
+      Maybe your conversations are mostly:
+    </p>
+
+    <p>
+      “Are you coming tomorrow?”
+    </p>
+
+    <p>
+      “Did you do the homework?”
+    </p>
+
+    <p>
+      “Wait what did she say?”
+    </p>
+
+    <p>
+      And that's it.
+    </p>
+
+    <p>
+      Nothing is technically wrong.
+    </p>
+
+    <p>
+      But you miss when there was more.
+    </p>
+
+
+    <h2>
+      Sometimes the friendship didn't end. It just changed.
+    </h2>
+
+    <p>
+      I think that's one of the hardest things about getting older.
+    </p>
+
+    <p>
+      We talk about friendships ending like there's always a clear moment when it happens.
+    </p>
+
+    <p>
+      But sometimes there isn't.
+    </p>
+
+    <p>
+      Sometimes you're still friends.
+    </p>
+
+    <p>
+      You just aren't <strong>those</strong> friends anymore.
+    </p>
+
+    <p>
+      The ones who stayed up until 2 a.m. talking.
+    </p>
+
+    <p>
+      The ones who had inside jokes nobody else understood.
+    </p>
+
+    <p>
+      The ones who could tell something was wrong just by the way the other person said “I'm fine.”
+    </p>
+
+    <p>
+      You don't necessarily stop caring about them.
+    </p>
+
+    <p>
+      You just become different people.
+    </p>
+
+    <p>
+      And sometimes different people don't fit together the same way they used to.
+    </p>
+
+
+    <div class="pull-quote">
+      Not every friendship needs a villain for it to change.
+    </div>
+
+
+    <h2>
+      And then you start wondering if it's your fault.
+    </h2>
+
+    <p>
+      Maybe I should text them more.
+    </p>
+
+    <p>
+      Maybe I was being distant.
+    </p>
+
+    <p>
+      Maybe they think I don't care.
+    </p>
+
+    <p>
+      Maybe I should've tried harder.
+    </p>
+
+    <p>
+      Maybe I ruined it.
+    </p>
+
+    <p>
+      You replay old conversations.
+    </p>
+
+    <p>
+      You look at old pictures.
+    </p>
+
+    <p>
+      You scroll through messages from two years ago and suddenly you're nostalgic for a version of your life that doesn't exist anymore.
+    </p>
+
+    <p>
+      And that's when it gets complicated.
+    </p>
+
+    <p>
+      Because you don't just miss the person.
+    </p>
+
+    <p>
+      You miss <strong>who you were with them.</strong>
+    </p>
+
+
+    <h2>
+      Growing up changes your friendships too.
+    </h2>
+
+    <p>
+      New classes.
+    </p>
+
+    <p>
+      New friends.
+    </p>
+
+    <p>
+      New interests.
+    </p>
+
+    <p>
+      Different schedules.
+    </p>
+
+    <p>
+      Different priorities.
+    </p>
+
+    <p>
+      Someone gets a job.
+    </p>
+
+    <p>
+      Someone starts dating.
+    </p>
+
+    <p>
+      Someone gets really into something you don't care about.
+    </p>
+
+    <p>
+      Someone becomes closer with another person.
+    </p>
+
+    <p>
+      And suddenly your friendship isn't the centre of both of your lives anymore.
+    </p>
+
+    <p>
+      Which is normal.
+    </p>
+
+    <p>
+      But normal doesn't always mean it doesn't hurt.
+    </p>
+
+    <p>
+      Sometimes you can be genuinely happy for someone and still miss them.
+    </p>
+
+    <p>
+      Both things can be true.
+    </p>
+
+
+    <h2>
+      You don't always have to fix it.
+    </h2>
+
+    <p>
+      This is probably the part nobody wants to hear.
+    </p>
+
+    <p>
+      Sometimes you can try.
+    </p>
+
+    <p>
+      Text them.
+    </p>
+
+    <p>
+      Ask to hang out.
+    </p>
+
+    <p>
+      Actually talk about what's been bothering you.
+    </p>
+
+    <p>
+      Sometimes the friendship comes back.
+    </p>
+
+    <p>
+      Sometimes it doesn't.
+    </p>
+
+    <p>
+      And sometimes you realize you don't actually want the old friendship back.
+    </p>
+
+    <p>
+      You just want the feeling you had when it existed.
+    </p>
+
+    <p>
+      There's a difference.
+    </p>
+
+    <p>
+      You can appreciate what someone meant to you without forcing them to stay in your life forever.
+    </p>
+
+    <p>
+      And you can let a friendship change without pretending it never mattered.
+    </p>
+
+
+    <h2>
+      Maybe growing up means making room.
+    </h2>
+
+    <p>
+      For new people.
+    </p>
+
+    <p>
+      For old people in new forms.
+    </p>
+
+    <p>
+      For friendships that last.
+    </p>
+
+    <p>
+      For friendships that don't.
+    </p>
+
+    <p>
+      For people you thought you'd know forever but eventually only see once in a while.
+    </p>
+
+    <p>
+      For the friend you haven't met yet.
+    </p>
+
+    <p>
+      Maybe not every person is supposed to come with you through every version of your life.
+    </p>
+
+    <p>
+      Some people are there for one chapter.
+    </p>
+
+    <p>
+      Some stay for five.
+    </p>
+
+    <p>
+      Some somehow make it through all of them.
+    </p>
+
+    <p>
+      You don't always get to know which one someone will be.
+    </p>
+
+    <p>
+      And maybe that's okay.
+    </p>
+
+    <p>
+      Because the fact that something changed doesn't mean it wasn't real.
+    </p>
+
+    <p>
+      It just means you're changing too.
+    </p>
+
+    <p>
+      And honestly?
+    </p>
+
+    <p>
+      That's probably one of the hardest parts of growing up.
+    </p>
+
+    <p>
+      You don't just have to figure out <strong>who you are.</strong>
+    </p>
+
+    <p>
+      You also have to figure out <strong>who still fits into your life.</strong>
+    </p>
+
+
+    <div class="article-end">
+
+      <a href="life.html" class="back-link">
+        ← BACK TO LIFE
+      </a>
+
+    </div>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="footer-logo">
+      THE IN-BETWEEN
+    </div>
+
+    <div class="footer-text">
+      for girls figuring it out.
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
