@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Everyone Is Figuring It Out. — THE IN-BETWEEN</title>
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #151515;
+      color: #f1ede5;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    /* HEADER */
+
+    header {
+      padding: 25px 8%;
+      border-bottom: 1px solid #333;
+      background: #151515;
+    }
+
+    .top-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 35px;
+    }
+
+    .issue {
+      font-size: 9px;
+      letter-spacing: 2px;
+      color: #a6a29d;
+    }
+
+    .online {
+      font-size: 9px;
+      letter-spacing: 2px;
+      color: #b97882;
+    }
+
+    .logo {
+      font-family: Georgia, serif;
+      font-size: clamp(50px, 9vw, 110px);
+      line-height: 0.85;
+      letter-spacing: -5px;
+      margin: 0;
+    }
+
+    .tagline {
+      margin-top: 15px;
+      color: #a6a29d;
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-size: 10px;
+      letter-spacing: 2px;
+      color: #a6a29d;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #f1ede5;
+    }
+
+    /* ARTICLE HERO */
+
+    .article-hero {
+      position: relative;
+      min-height: 75vh;
+      display: flex;
+      align-items: flex-end;
+      padding: 80px 8%;
+      overflow: hidden;
+    }
+
+    .article-image {
+      position: absolute;
+      inset: 0;
+
+      background-image:
+        linear-gradient(
+          to top,
+          rgba(10, 10, 10, 0.96),
+          rgba(10, 10, 10, 0.35),
+          rgba(10, 10, 10, 0.2)
+        ),
+        url("https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=2000&q=85");
+
+      background-size: cover;
+      background-position: center;
+      filter: brightness(0.75);
+    }
+
+    .article-hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+    }
+
+    .category {
+      font-size: 10px;
+      letter-spacing: 3px;
+      color: #d39aa3;
+      margin-bottom: 25px;
+    }
+
+    .article-hero h1 {
+      font-family: Georgia, serif;
+      font-weight: normal;
+      font-size: clamp(55px, 9vw, 120px);
+      line-height: 0.9;
+      letter-spacing: -5px;
+      margin: 0 0 30px;
+    }
+
+    .deck {
+      max-width: 650px;
+      font-size: 18px;
+      line-height: 1.7;
+      color: #ddd8d0;
+      margin: 0;
+    }
+
+    /* ARTICLE */
+
+    .article {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 100px 30px;
+    }
+
+    .article-meta {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #333;
+      padding-bottom: 20px;
+      margin-bottom: 70px;
+
+      font-size: 9px;
+      letter-spacing: 2px;
+      color: #92908c;
+    }
+
+    .article p {
+      font-size: 18px;
+      line-height: 1.9;
+      color: #c9c5bf;
+      margin: 0 0 28px;
+    }
+
+    .article h2 {
+      font-family: Georgia, serif;
+      font-weight: normal;
+      font-size: clamp(35px, 5vw, 55px);
+      line-height: 1;
+      margin: 80px 0 30px;
+      color: #f1ede5;
+      letter-spacing: -1px;
+    }
+
+    .article strong {
+      color: #f1ede5;
+    }
+
+    .pull-quote {
+      border-left: 2px solid #b51f36;
+      padding: 20px 0 20px 30px;
+      margin: 60px 0;
+      font-family: Georgia, serif;
+      font-size: clamp(25px, 4vw, 38px);
+      line-height: 1.2;
+      color: #f1ede5;
+    }
+
+    .article-end {
+      margin-top: 90px;
+      padding-top: 40px;
+      border-top: 1px solid #333;
+    }
+
+    .back-link {
+      display: inline-block;
+      color: #f1ede5;
+      text-decoration: none;
+      font-size: 10px;
+      letter-spacing: 2px;
+      border-bottom: 1px solid #b51f36;
+      padding-bottom: 8px;
+      transition: 0.3s ease;
+    }
+
+    .back-link:hover {
+      color: #d39aa3;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #0c0c0c;
+      padding: 70px 8%;
+      border-top: 1px solid #333;
+    }
+
+    .footer-logo {
+      font-family: Georgia, serif;
+      font-size: 45px;
+      letter-spacing: -2px;
+    }
+
+    .footer-text {
+      color: #92908c;
+      font-size: 12px;
+      margin-top: 10px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 700px) {
+
+      header {
+        padding: 20px 6%;
+      }
+
+      .logo {
+        font-size: 55px;
+        letter-spacing: -3px;
+      }
+
+      nav {
+        gap: 15px;
+      }
+
+      .article-hero {
+        min-height: 78vh;
+        padding: 55px 6%;
+      }
+
+      .article-hero h1 {
+        font-size: 55px;
+        letter-spacing: -3px;
+      }
+
+      .deck {
+        font-size: 16px;
+      }
+
+      .article {
+        padding: 75px 6%;
+      }
+
+      .article-meta {
+        display: block;
+        line-height: 2;
+      }
+
+      .article p {
+        font-size: 17px;
+      }
+
+      .article h2 {
+        font-size: 38px;
+        margin-top: 65px;
+      }
+
+      .pull-quote {
+        font-size: 27px;
+        padding-left: 20px;
+      }
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="top-line">
+      <div class="issue">ISSUE 01 — SEPTEMBER 2026</div>
+      <div class="online">ONLINE MAGAZINE</div>
+    </div>
+
+    <a href="index.html" style="text-decoration: none;">
+      <h1 class="logo">THE IN-BETWEEN</h1>
+    </a>
+
+    <div class="tagline">
+      for girls figuring it out.
+    </div>
+
+    <nav>
+      <a href="the-edit.html">THE EDIT</a>
+      <a href="life.html">LIFE</a>
+      <a href="school.html">SCHOOL</a>
+      <a href="health.html">HEALTH</a>
+      <a href="future.html">FUTURE</a>
+      <a href="city.html">CITY</a>
+      <a href="culture.html">CULTURE</a>
+      <a href="voices.html">VOICES</a>
+    </nav>
+
+  </header>
+
+
+  <!-- ARTICLE HERO -->
+
+  <section class="article-hero">
+
+    <div class="article-image"></div>
+
+    <div class="article-hero-content">
+
+      <div class="category">
+        LIFE — COVER STORY
+      </div>
+
+      <h1>
+        Everyone Is<br>
+        Figuring It Out.
+      </h1>
+
+      <p class="deck">
+        School. Friendships. What comes next.
+        Somehow everyone expects us to have a plan
+        before we've even figured out who we are.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- ARTICLE -->
+
+  <main class="article">
+
+    <div class="article-meta">
+      <span>THE IN-BETWEEN</span>
+      <span>ISSUE 01 / LIFE</span>
+    </div>
+
+
+    <p>
+      There’s a point in high school where the questions start getting a little too serious.
+    </p>
+
+    <p>
+      “What are you doing after graduation?”
+    </p>
+
+    <p>
+      “What do you want to study?”
+    </p>
+
+    <p>
+      “Where do you see yourself in five years?”
+    </p>
+
+    <p>
+      Five years?
+    </p>
+
+    <p>
+      I’m still deciding what I’m wearing tomorrow.
+    </p>
+
+    <p>
+      And somehow, everyone expects an answer.
+    </p>
+
+    <p>
+      You can be sitting in class half-listening to your teacher while thinking about what you're doing after school, and suddenly someone is talking about university applications, scholarships, careers, moving out, or studying in another country.
+    </p>
+
+    <p>
+      Then you open Instagram and someone you went to elementary school with is posting about their acceptance letter.
+    </p>
+
+    <p>
+      Someone else is travelling.
+    </p>
+
+    <p>
+      Someone got a job.
+    </p>
+
+    <p>
+      Someone is suddenly in love.
+    </p>
+
+    <p>
+      Someone looks like they have their entire life planned.
+    </p>
+
+    <p>
+      And you're just sitting there thinking:
+    </p>
+
+    <p>
+      <strong>Wait. Was I supposed to be doing something?</strong>
+    </p>
+
+
+    <h2>
+      Maybe everyone just looks like they know what they're doing.
+    </h2>
+
+    <p>
+      The weird thing is that most people don't actually look confused.
+    </p>
+
+    <p>
+      They have the outfits. The plans. The friend groups. The playlists. The perfectly timed photo dumps.
+    </p>
+
+    <p>
+      They know where they're going Friday night.
+    </p>
+
+    <p>
+      They know what university they want.
+    </p>
+
+    <p>
+      They know what they're wearing to the party.
+    </p>
+
+    <p>
+      They somehow know what they want to do with their entire life.
+    </p>
+
+    <p>
+      At least, that's what it looks like.
+    </p>
+
+    <p>
+      But you never really know what's happening outside the frame.
+    </p>
+
+    <p>
+      The girl who seems completely confident might go home and question every conversation she had that day.
+    </p>
+
+    <p>
+      The person who seems like they have their future planned might change their mind next year.
+    </p>
+
+    <p>
+      The friend who always knows exactly what to say might have no idea what they're doing either.
+    </p>
+
+    <p>
+      Maybe we're all just really good at looking like we aren't figuring it out.
+    </p>
+
+
+    <div class="pull-quote">
+      You can look like you have it together and still have absolutely no idea what you're doing.
+    </div>
+
+
+    <h2>
+      Growing up is basically a collection of tiny goodbyes.
+    </h2>
+
+    <p>
+      Nobody really tells you this part.
+    </p>
+
+    <p>
+      Sometimes growing up means losing people you thought you'd know forever.
+    </p>
+
+    <p>
+      Sometimes it means realizing that a friendship doesn't feel the same anymore.
+    </p>
+
+    <p>
+      Sometimes your friend group changes without anyone officially saying that it changed.
+    </p>
+
+    <p>
+      One day you're talking every day.
+    </p>
+
+    <p>
+      Then you're not.
+    </p>
+
+    <p>
+      Then you see each other at school and it's not exactly awkward, but it's not the same either.
+    </p>
+
+    <p>
+      And nobody did anything wrong.
+    </p>
+
+    <p>
+      You just changed.
+    </p>
+
+    <p>
+      That's one of the strangest things about getting older.
+    </p>
+
+    <p>
+      You can love someone and still grow in completely different directions.
+    </p>
+
+    <p>
+      You can miss an old version of your life without actually wanting it back.
+    </p>
+
+    <p>
+      And you can be excited about what's next while still feeling a little sad about what you're leaving behind.
+    </p>
+
+
+    <h2>
+      And then there's the future.
+    </h2>
+
+    <p>
+      The future is weird because everyone talks about it like it's a place you're supposed to arrive at.
+    </p>
+
+    <p>
+      Graduate.
+    </p>
+
+    <p>
+      Go to university.
+    </p>
+
+    <p>
+      Get a job.
+    </p>
+
+    <p>
+      Move out.
+    </p>
+
+    <p>
+      Figure out your career.
+    </p>
+
+    <p>
+      Have your life together.
+    </p>
+
+    <p>
+      But what if your life doesn't happen in that order?
+    </p>
+
+    <p>
+      What if you change your mind?
+    </p>
+
+    <p>
+      What if you go somewhere and realize you don't want to stay?
+    </p>
+
+    <p>
+      What if the thing you thought you'd love ends up being completely wrong for you?
+    </p>
+
+    <p>
+      What if you don't know yet?
+    </p>
+
+    <p>
+      Honestly, maybe that's okay.
+    </p>
+
+
+    <div class="pull-quote">
+      Maybe you don't need a five-year plan. Maybe you just need a next step.
+    </div>
+
+
+    <p>
+      Take the class you're curious about.
+    </p>
+
+    <p>
+      Apply for the volunteer position.
+    </p>
+
+    <p>
+      Get the part-time job.
+    </p>
+
+    <p>
+      Go to the event even if you don't know anyone.
+    </p>
+
+    <p>
+      Talk to someone new.
+    </p>
+
+    <p>
+      Try something and hate it.
+    </p>
+
+    <p>
+      Try something and love it.
+    </p>
+
+    <p>
+      Change your mind.
+    </p>
+
+    <p>
+      Start over.
+    </p>
+
+    <p>
+      Do something just because you're curious.
+    </p>
+
+    <p>
+      Not everything needs to become part of your “future.”
+    </p>
+
+    <p>
+      Sometimes it can just be something you wanted to try.
+    </p>
+
+
+    <h2>
+      We're all making it up as we go.
+    </h2>
+
+    <p>
+      Maybe that's what nobody tells you.
+    </p>
+
+    <p>
+      There isn't actually a moment where you suddenly become an adult and everything makes sense.
+    </p>
+
+    <p>
+      You don't wake up one morning with the perfect career, perfect friendships, perfect routine, perfect apartment, perfect skin, perfect bank account and a perfectly organized calendar.
+    </p>
+
+    <p>
+      You just keep figuring things out.
+    </p>
+
+    <p>
+      One decision at a time.
+    </p>
+
+    <p>
+      One awkward conversation.
+    </p>
+
+    <p>
+      One new friendship.
+    </p>
+
+    <p>
+      One bad grade.
+    </p>
+
+    <p>
+      One good day.
+    </p>
+
+    <p>
+      One random Tuesday night where you suddenly realize you're actually excited about something.
+    </p>
+
+    <p>
+      And maybe that's what growing up is.
+    </p>
+
+    <p>
+      Not becoming someone who has everything figured out.
+    </p>
+
+    <p>
+      Just becoming someone who's okay with figuring it out.
+    </p>
+
+    <p>
+      Because honestly?
+    </p>
+
+    <p>
+      <strong>Everyone is figuring it out.</strong>
+    </p>
+
+    <p>
+      Some people are just better at making it look like they're not.
+    </p>
+
+
+    <div class="article-end">
+
+      <a href="life.html" class="back-link">
+        ← BACK TO LIFE
+      </a>
+
+    </div>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="footer-logo">
+      THE IN-BETWEEN
+    </div>
+
+    <div class="footer-text">
+      for girls figuring it out.
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
