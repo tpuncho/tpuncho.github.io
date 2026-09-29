@@ -1,7 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8">.right-now {
+    padding: 100px 8%;
+    background: #202020;
+    border-bottom: 1px solid #333;
+}
+
+.right-now-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.right-now-top .small {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #b97882;
+}
+
+.right-now-time {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #92908c;
+}
+
+.right-now h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(50px, 7vw, 95px);
+    line-height: 0.9;
+    font-weight: normal;
+    color: #f1ede5;
+    margin: 0 0 75px;
+    letter-spacing: -3px;
+}
+
+.right-now h2 em {
+    color: #b97882;
+    font-weight: normal;
+}
+
+.right-now-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.now-item {
+    border-top: 1px solid #555;
+    padding-top: 16px;
+}
+
+.now-item span {
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #b51f36;
+}
+
+.now-item h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 23px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #f1ede5;
+    margin-top: 20px;
+}
+
+@media (max-width: 700px) {
+
+    .right-now {
+        padding: 75px 6%;
+    }
+
+    .right-now-top {
+        margin-bottom: 40px;
+    }
+
+    .right-now-time {
+        display: none;
+    }
+
+    .right-now h2 {
+        font-size: 55px;
+        margin-bottom: 55px;
+    }
+
+    .right-now-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px 18px;
+    }
+
+    .now-item h3 {
+        font-size: 20px;
+    }
+
+}
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>THE IN-BETWEEN</title>
@@ -1106,47 +1200,69 @@
      RIGHT NOW
 ========================= -->
 
+<!-- =========================
+     RIGHT NOW
+========================= -->
+
 <section class="right-now">
 
-  <div class="right-now-top">
+  <div class="right-now-header">
 
-    <div class="small">
-      THE IN-BETWEEN / RIGHT NOW
+    <div>
+      <div class="small">
+        THE IN-BETWEEN / RIGHT NOW
+      </div>
+
+      <h2>
+        What we're into<br>
+        <em>right now.</em>
+      </h2>
     </div>
 
-    <div class="right-now-time">
-      11:47 PM
+    <div class="right-now-stamp">
+      ISSUE 01<br>
+      SEPTEMBER 2026
     </div>
 
   </div>
 
 
-  <h2>
-    What we're into<br>
-    <em>right now.</em>
-  </h2>
+  <div class="right-now-content">
 
-
-  <div class="right-now-grid">
-
-    <div class="now-item">
-      <span>01 / LISTENING TO</span>
-      <h3>songs that make the walk home feel like a movie</h3>
+    <div class="right-now-photo photo-one">
+      <img src="https://i.pinimg.com/736x/73/62/b5/7362b5916f01095a5914eac04daddb7c.jpg" alt="City at night">
+      <span>11:47 PM / DOWNTOWN</span>
     </div>
 
-    <div class="now-item">
-      <span>02 / WEARING</span>
-      <h3>oversized jackets, tiny bags & whatever feels right</h3>
+
+    <div class="now-list">
+
+      <div class="now-item">
+        <span>01 / LISTENING TO</span>
+        <h3>songs that make the walk home feel like a movie</h3>
+      </div>
+
+      <div class="now-item">
+        <span>02 / WEARING</span>
+        <h3>oversized jackets, tiny bags & whatever feels right</h3>
+      </div>
+
+      <div class="now-item">
+        <span>03 / CURRENTLY SAVING</span>
+        <h3>blurry flash photos and places we want to go</h3>
+      </div>
+
+      <div class="now-item">
+        <span>04 / GROUP CHAT</span>
+        <h3>“are we actually going out tonight?”</h3>
+      </div>
+
     </div>
 
-    <div class="now-item">
-      <span>03 / OBSESSED WITH</span>
-      <h3>late-night plans that were definitely not planned</h3>
-    </div>
 
-    <div class="now-item">
-      <span>04 / THINKING ABOUT</span>
-      <h3>where we're going next</h3>
+    <div class="right-now-photo photo-two">
+      <img src="https://i.pinimg.com/736x/f6/36/99/f6369985fe43da8464fca5cde21aa127.jpg" alt="Friends hanging out">
+      <span>NO PLANS / JUST GO</span>
     </div>
 
   </div>
